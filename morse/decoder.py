@@ -1,3 +1,8 @@
+"""
+Morse decoder module.
+
+Decodes Morse codes into text and words.
+"""
 
 from morse.mapping import MORSE
 
@@ -5,7 +10,7 @@ REVERSE_MORSE = {code: letter for letter, code in MORSE.items()}
 
 def decode(morse_text):
     """
-    Decode the morse text to letter texts.
+    "Decodes a Morse-encoded text into uppercase words separated by spaces.
     """
     morse_words = [w.strip() for w in morse_text.strip().split("|") if w.strip()]
     words = [decode_word(mw) for mw in morse_words]

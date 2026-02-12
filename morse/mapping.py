@@ -3,7 +3,7 @@ This module defines the Morse code dictionary used for encoding and decoding tex
 
 Constants:
 - MORSE: A dictionary mapping English letters (A-Z) to their corresponding Morse code
-  representations.
+representations.
 """
 
 MORSE = {
